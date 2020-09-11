@@ -15,6 +15,10 @@ var usuarioSchema = new Schema({
   voto: [{
     type: Schema.ObjectId,
     ref: "Post"
+  }],
+  postCreado: [{
+    type: Schema.ObjectId,
+    ref: "Post"
   }]
 });
 module.exports = _mongoose.default.model('Usuario', usuarioSchema);
